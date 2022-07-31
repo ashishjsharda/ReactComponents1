@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Greetings(){
+export const Greetings =() =>{
     let isMorning=(new Date().getHours() <12);
     return isMorning?
         (<>

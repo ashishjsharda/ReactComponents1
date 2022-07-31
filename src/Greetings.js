@@ -1,6 +1,6 @@
 import React from "react";
 
-function Greetings(){
+export function Greetings(){
     let isMorning=(new Date().getHours() <12);
     return isMorning?
         (<>
@@ -12,4 +12,3 @@ function Greetings(){
             </>)
 }
 
-export default Greetings;

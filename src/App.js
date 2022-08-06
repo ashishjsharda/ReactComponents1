@@ -2,6 +2,19 @@ import logo from './logo.svg';
 import './App.css';
 import {Greetings} from './Greetings';
 
+const people=[
+  {
+    name:'John',
+    age:40,
+    hairColor:'brown'
+  },{
+    name:'Jack',
+    age:42,
+    hairColor:'black'
+
+  }
+]
+
 function App() {
   return (
     <div className="App">

@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {Greetings} from './Greetings';
+import {PeopleList} from "./PeopleList";
 
 const people=[
   {
@@ -20,7 +21,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Greetings name={"Ashish"} numberofMessages={0}></Greetings>
-        <img src={logo} className="App-logo" alt="logo" />
+        <PeopleList people ={people} />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

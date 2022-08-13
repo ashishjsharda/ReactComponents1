@@ -17,11 +17,17 @@ const people=[
 ]
 
 function App() {
+
+  const displayGreetings=()=>{
+    alert('Hello World');
+  }
   return (
     <div className="App">
       <header className="App-header">
         <Greetings name={"Ashish"} numberofMessages={0}></Greetings>
         <PeopleList people ={people} />
+        <button onClick={displayGreetings}>Click Me</button>
+
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

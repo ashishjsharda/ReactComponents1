@@ -5,7 +5,7 @@ import {PeopleList} from "./PeopleList";
 
 const people=[
   {
-    name:'John',
+    name:'Ashish',
     age:40,
     hairColor:'brown'
   },{

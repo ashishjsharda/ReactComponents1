@@ -1,9 +1,7 @@
 .list-item-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 400px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }

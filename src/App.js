@@ -21,6 +21,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <p style={{"color":"red" ,fontSize:'96px'}}>Big Red Text React App</p>
         <Greetings name={"Ashish"} numberofMessages={0}></Greetings>
         <PeopleList people ={people} />
         <button onClick={() =>{alert('Hello World');}}>Click Me</button>

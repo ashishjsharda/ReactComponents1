@@ -21,22 +21,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p style={{"color":"blue" ,fontSize:'96px'}}>Big Red Text React App</p>
-        <Greetings name={"Ashish"} numberofMessages={0}></Greetings>
-        <PeopleList people ={people} />
-        <button onClick={() =>{alert('Hello World');}}>Click Me</button>
-
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
       </header>
     </div>
   );

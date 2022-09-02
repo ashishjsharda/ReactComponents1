@@ -1,7 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import {Greetings} from './Greetings';
-import {PeopleList} from "./PeopleList";
 import {CounterButton} from "./CounterButton";
 
 const people=[

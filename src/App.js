@@ -1,6 +1,7 @@
 import './App.css';
 import {CounterButton} from "./CounterButton";
 
+
 const people=[
   {
     name:'Ashish',

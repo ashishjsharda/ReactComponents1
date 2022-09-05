@@ -1,5 +1,6 @@
 import './App.css';
 import {CounterButton} from "./CounterButton";
+import {CongratulationsMessage} from "./CongratulationsMessage";
 
 
 const people=[

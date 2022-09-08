@@ -1,10 +1,9 @@
 import React ,{useState}  from "react";
-export const CounterButton =() => {
-    const [count,setCount]=useState(0);
-    const incrementCount=()=>setCount(count+1);
+export const CounterButton =({onIncrement,numberOfClicks}) => {
+
     return (
         <>
-            <p>You have clicked the button {count} times</p>
-            <button onClick={incrementCount}>Click Me</button>
+            <p>You have clicked the button {numberOfClicks} times</p>
+            <button onClick={onIncrement}>Click Me</button>
         </>);
 }

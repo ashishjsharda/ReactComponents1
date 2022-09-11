@@ -25,7 +25,7 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-                {hideMessage ? null : <CongratulationsMessage numberOfClicks={numberOfClicks} threshold={10}/>}
+                {hideMessage ? null : <CongratulationsMessage numberOfClicks={numberOfClicks} threshold={5}/>}
 
                 <CounterButton onIncrement={incrementCount} numberOfClicks={numberOfClicks} />
             </header>

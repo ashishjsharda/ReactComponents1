@@ -3,6 +3,10 @@ export const CounterButton =({onIncrement,numberOfClicks}) => {
 
     useEffect(()=>{
         console.log('CounterButton useEffect called');
+        return ()=>{
+            console.log('Unsubscribe from CounterButton');
+        }
+
     },[]);
 
     return (

@@ -21,11 +21,14 @@ function App() {
 
     const [numberOfClicks,setCount]=useState(0);
     const incrementCount=()=>setCount(numberOfClicks+1);
-    const [hideMessage]=useState(false);
+    const [hideMessage,setHideMessage]=useState(false);
     return (
         <div className="App">
             <header className="App-header">
-                {hideMessage ? null : <CongratulationsMessage numberOfClicks={numberOfClicks} threshold={5}/>}
+                {hideMessage ? null : <CongratulationsMessage
+                    numberOfClicks={numberOfClicks}
+                    threshold={5}
+                onHide={() =>setHideMessage(true)}/>}
 
                 <CounterButton onIncrement={incrementCount} numberOfClicks={numberOfClicks} />
             </header>

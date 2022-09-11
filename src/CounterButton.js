@@ -3,7 +3,7 @@ export const CounterButton =({onIncrement,numberOfClicks}) => {
 
     useEffect(()=>{
         console.log('CounterButton useEffect called');
-    });
+    },[]);
 
     return (
         <>

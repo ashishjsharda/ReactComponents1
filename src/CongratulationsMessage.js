@@ -1,7 +1,11 @@
 import React from 'react'
-export const CongratulationsMessage =({numberOfClicks,threshold}) =>{
+export const CongratulationsMessage =({numberOfClicks,threshold,onHide}) =>{
     return numberOfClicks>= threshold
-        ?<h3>Congratulations ! You have reached the threshold -  {threshold}  clicks!</h3>
+        ?<>
+        <h1>Congratulations ! You have reached the threshold -  {threshold}  clicks!</h1>
+        <button onClick={onHide}>Hide</button>
+        </>
         :null;
+
 
 };

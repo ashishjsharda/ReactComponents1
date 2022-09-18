@@ -7,7 +7,7 @@ export const CongratulationsMessage =({numberOfClicks,threshold,onHide}) =>{
               console.log('Unsubscribe from CongratulationsMessage');
          }
 
-   });
+   },[]);
 
 
     return numberOfClicks>= threshold

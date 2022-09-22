@@ -6,15 +6,14 @@ export const CounterButtonPage = () => {
     const incrementCount=()=>setCount(numberOfClicks+1);
     const [hideMessage,setHideMessage]=useState(false);
     return (
-        <div className="App">
-            <header className="App-header">
+        <>
+            <h1>Counter Button Page</h1>
                 {hideMessage ? null : <CongratulationsMessage
                     numberOfClicks={numberOfClicks}
                     threshold={5}
                     onHide={() =>setHideMessage(true)}/>}
 
                 <CounterButton onIncrement={incrementCount} numberOfClicks={numberOfClicks} />
-            </header>
-        </div>
+        </>
     );
 }

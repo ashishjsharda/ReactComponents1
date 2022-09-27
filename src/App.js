@@ -2,20 +2,7 @@ import './App.css';
 import {CounterButton} from "./CounterButton";
 import {CongratulationsMessage} from "./CongratulationsMessage";
 import React ,{useState} from "react";
-
-
-const people=[
-    {
-        name:'Ashish',
-        age:40,
-        hairColor:'brown'
-    },{
-        name:'Jack',
-        age:42,
-        hairColor:'black'
-
-    }
-]
+import {BrowserRouter as Router,Route} from "react-router-dom";
 
 function App() {
 

@@ -13,7 +13,10 @@ function App() {
     return (
         <div className="App">
             <Router>
-<Route path="/"> <HomePage/></Route>
+                <Route path="/"> <HomePage/></Route>
+                <Route path="/counter"> <CounterButtonPage/></Route>
+                <Route path="/people"> <PeopleListPage/></Route>
+
             </Router>
         </div>
     );

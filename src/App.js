@@ -1,22 +1,24 @@
 import './App.css';
-import {CounterButton} from "./CounterButton";
-import {CongratulationsMessage} from "./CongratulationsMessage";
-import {HomePage,CounterButtonPage,PeopleListPage} from "./pages";
-import React ,{useState} from "react";
-import {BrowserRouter as Router,Route} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
+import {
+    HomePage,
+    CounterButtonPage,
+    PeopleListPage,
 
+} from './pages'
 function App() {
-
-    const [numberOfClicks,setCount]=useState(0);
-    const incrementCount=()=>setCount(numberOfClicks+1);
-    const [hideMessage,setHideMessage]=useState(false);
     return (
         <div className="App">
             <Router>
-                <Route path="/"> <HomePage/></Route>
-                <Route path="/counter"> <CounterButtonPage/></Route>
-                <Route path="/people"> <PeopleListPage/></Route>
-
+                <Link to="/">Home page</Link>
+                <Link to="/people-list">People list page</Link>
+                <Link to="/counter">Counter page</Link>
+                <Routes>
+                    <Route path="/" exact element={<HomePage />} />
+                    <Route path="/counter/:name" exact element={<CounterButtonPage />} />
+                    <Route path="/people-list" exact element={<PeopleListPage />} />
+                    
+                </Routes>
             </Router>
         </div>
     );

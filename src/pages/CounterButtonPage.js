@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { CounterButton } from "../CounterButton";
 import{useParams,useLocation} from "react-router-dom";
+import {parse} from "query-string";
 import { CongratulationMessage } from "../CongratulationsMessage";
 
 export const CounterButtonPage = () => {

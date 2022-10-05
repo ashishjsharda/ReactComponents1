@@ -7,7 +7,7 @@ import { CongratulationMessage } from "../CongratulationsMessage";
 export const CounterButtonPage = () => {
     //const name = useParams().name;
     const location = useLocation();
-    console.log(parse(location.search));
+    const startingValue = parse(location.search).startingValue || 0;
     const [numberOfClicks, setNumberOfClicks] = useState(0)
     const [hideMessage, setHideMessage] = useState(false)
 

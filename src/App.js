@@ -15,7 +15,7 @@ function App() {
                 <Link to="/counter">Counter page</Link>
                 <Routes>
                     <Route path="/" exact element={<HomePage />} />
-                    <Route path="/counter/:name" exact element={<CounterButtonPage />} />
+                    <Route path="/counter/" exact element={<CounterButtonPage />} />
                     <Route path="/people-list" exact element={<PeopleListPage />} />
                     
                 </Routes>

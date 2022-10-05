@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { CounterButton } from "../CounterButton";
-import{useParams,useLocation} from "react-router-dom";
+import{useLocation} from "react-router-dom";
 import {parse} from "query-string";
 import { CongratulationMessage } from "../CongratulationsMessage";
 
 export const CounterButtonPage = () => {
-    const name = useParams().name;
+    //const name = useParams().name;
     const location = useLocation();
     console.log(parse(location.search));
     const [numberOfClicks, setNumberOfClicks] = useState(0)
@@ -16,7 +16,7 @@ export const CounterButtonPage = () => {
     }
     return (
         <>
-            <h1>{name} 's Counter button page</h1>
+            <h1> Counter button page</h1>
             {
                 hideMessage
                     ? null

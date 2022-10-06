@@ -8,7 +8,7 @@ export const CounterButtonPage = () => {
     //const name = useParams().name;
     const location = useLocation();
     const startingValue = parse(location.search).startingValue || 0;
-    const [numberOfClicks, setNumberOfClicks] = useState(0)
+    const [numberOfClicks, setNumberOfClicks] = useState(startingValue)
     const [hideMessage, setHideMessage] = useState(false)
 
     const clicksHandler = () => {

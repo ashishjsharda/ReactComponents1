@@ -4,6 +4,7 @@ import {
     HomePage,
     CounterButtonPage,
     PeopleListPage,
+    NotFoundPage
 
 } from './pages'
 function App() {
@@ -17,6 +18,7 @@ function App() {
                     <Route path="/" exact element={<HomePage />} />
                     <Route path="/counter/" exact element={<CounterButtonPage />} />
                     <Route path="/people-list" exact element={<PeopleListPage />} />
+                    <Route path="*" element={<NotFoundPage />} />
                     
                 </Routes>
             </Router>

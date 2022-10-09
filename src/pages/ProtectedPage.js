@@ -1,7 +1,7 @@
 import React  from "react";
-export const ProtectedPage = () => (
+export const ProtectedPage = () => {
 
-  return(
+  return (
       <h1>Protected Page</h1>
-  )
-);
+  );
+}

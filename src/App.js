@@ -4,7 +4,8 @@ import {
     HomePage,
     CounterButtonPage,
     PeopleListPage,
-    NotFoundPage
+    NotFoundPage,
+    ProtectedPage
 
 } from './pages'
 function App() {
@@ -19,6 +20,7 @@ function App() {
                     <Route path="/counter/" exact element={<CounterButtonPage />} />
                     <Route path="/people-list" exact element={<PeopleListPage />} />
                     <Route path="*" element={<NotFoundPage />} />
+                    <Route path="/protected" element={<ProtectedPage />} />
                     
                 </Routes>
             </Router>

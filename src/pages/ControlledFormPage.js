@@ -13,6 +13,7 @@ return(
         <div>
             <input type="text"  name="favoritecolor" placeholder="Favorite Color" />
         </div>
+        <button> Submit</button>
     </form>
 )
 }

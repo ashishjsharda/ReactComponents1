@@ -16,9 +16,13 @@ return(
             onChange={e=>setName(e.target.value)}/>
         </div>
         <div>
-            <input type="text"  name="favoritecolor" placeholder="Favorite Color" />
+            <input type="text"  name="favoritecolor"  id="favoritecolor"placeholder="Favorite Color" value={favoriteColor}
+            onChange={e=>setName(e.target.value)}/>
         </div>
-        <button> Submit</button>
+        <button onClick={e=>{
+            e.preventDefault();
+            alert(`Your name is ${name}, your email is ${email}, and your favorite color is ${favoriteColor}`)
+        }}> Submit</button>
     </form>
 )
 }

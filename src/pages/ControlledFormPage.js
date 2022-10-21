@@ -20,8 +20,9 @@ return(
             onChange={e=>setName(e.target.value)}/>
         </div>
         <button onClick={e=>{
-            e.preventDefault();
+
             alert(`Your name is ${name}, your email is ${email}, and your favorite color is ${favoriteColor}`)
+            e.preventDefault();
         }}> Submit</button>
     </form>
 )

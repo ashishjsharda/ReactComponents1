@@ -7,16 +7,16 @@ return(
     <form>
         <h3>Please enter your information</h3>
         <div>
-            <input type="text" id="name" name="name" placeholder="Name" value={name}
-            onChange={event => setName(event.target.value)}/>
+            <input type="text" id="name"  placeholder="Name" value={name}
+            onChange={e => setName(e.target.value)}/>
 
         </div>
         <div>
-            <input type="text" id="email" name="email" placeholder="Email" value={email}
+            <input type="text" id="email"  placeholder="Email" value={email}
             onChange={e=>setName(e.target.value)}/>
         </div>
         <div>
-            <input type="text"  name="favoritecolor"  id="favoritecolor"placeholder="Favorite Color" value={favoriteColor}
+            <input type="text"   id="favoritecolor"placeholder="Favorite Color" value={favoriteColor}
             onChange={e=>setName(e.target.value)}/>
         </div>
         <button onClick={e=>{

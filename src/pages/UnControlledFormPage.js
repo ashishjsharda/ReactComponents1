@@ -11,8 +11,12 @@ export const UnControlledFormPage = () => {
                 <input ref={emailInputRef} type="text" placeholder="Email" />
                 <input type="text" placeholder="Phone" />
                 <input type="text" placeholder="Address" />
-                <input type="submit" value="Submit" />
+
             </form>
+            <button onClick={() => {
+                alert(`Your name is ${nameInputRef.current.value}, your email is ${emailInputRef.current.value}`)
+            }
+            }>Show Values</button>
         </div>
     );
 }

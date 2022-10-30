@@ -15,6 +15,7 @@ export const UnControlledFormPage = () => {
             </form>
             <button onClick={() => {
                 alert(`Your name is ${nameInputRef.current.value}, your email is ${emailInputRef.current.value}`)
+                
             }
             }>Show Values</button>
         </div>

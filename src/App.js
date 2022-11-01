@@ -10,10 +10,14 @@ import {
     UnControlledFormPage
 
 } from './pages'
+import {NavBar} from "./pages/NavBar";
 function App() {
     return (
         <div className="App">
             <Router>
+                <NavBar/>
+                <div className={"App-header"}>
+
                 <Link to="/">Home page</Link>
                 <Link to="/people-list">People list page</Link>
                 <Link to="/counter">Counter page</Link>
@@ -30,6 +34,7 @@ function App() {
                     <Route path={"/uncontrolled-form"} element={<UnControlledFormPage />} />
                     
                 </Routes>
+                </div>
             </Router>
         </div>
     );

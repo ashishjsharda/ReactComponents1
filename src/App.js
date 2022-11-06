@@ -30,8 +30,12 @@ function App() {
                     <Route path="/people-list" exact element={<PeopleListPage />} />
                     <Route path="*" element={<NotFoundPage />} />
                     <Route path="/protected" element={<ProtectedPage />} />
-                    <Route path={"/controlled-form"} element={<ControlledFormPage />} />
-                    <Route path={"/uncontrolled-form"} element={<UnControlledFormPage />} />
+                    <Route path="/forms">
+                        <Router>
+                            <Route path="/controlled-form" element={<ControlledFormPage />} />
+                            <Route path="/uncontrolled-form" element={<UnControlledFormPage />} />
+                        </Router>
+                    </Route>
                     
                 </Routes>
                 </div>

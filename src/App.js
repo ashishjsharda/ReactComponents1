@@ -11,6 +11,7 @@ import {
 
 } from './pages'
 import {NavBar} from "./pages/NavBar";
+import {FormsNavBar} from "./FormsNavBar";
 function App() {
     return (
         <div className="App">
